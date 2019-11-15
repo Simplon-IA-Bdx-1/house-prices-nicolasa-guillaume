@@ -1,0 +1,15 @@
+jupyter
+jupyterthemes
+nbdime
+jupyter_contrib_nbextensions
+import-ipynb
+qgrid
+pandas==0.24.2
+pandas_ml
+sklearn
+xgboost==0.80
+matplotlib
+kaggle
+bigml
+rise
+#dill==0.3.0
