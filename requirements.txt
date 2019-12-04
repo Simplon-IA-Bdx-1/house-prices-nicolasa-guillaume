@@ -6,7 +6,7 @@ import-ipynb
 qgrid
 pandas==0.24.2
 pandas_ml
-sklearn
+scikit-learn
 xgboost==0.80
 matplotlib
 kaggle
