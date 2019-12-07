@@ -12,4 +12,7 @@ matplotlib
 kaggle
 bigml
 rise
-#dill==0.3.0
+seaborn
+hypopt
+autopep8
+tensorflow

@@ -26,7 +26,9 @@ start (){
     else
 	echo 'starting notebook'
 	set -a
-	source ./.env
+	if [[ -f ".env" ]]; then
+	    source ./.env
+	fi
 	
 	jupyter notebook </dev/null &>/dev/null &
 	echo $! > $PIDFile
@@ -54,8 +56,15 @@ dump (){
     rm $PIDFile
 }
 
+install (){
+    pip install -r ./requirements.txt
+    jupyter contrib nbextension install --user
+    jupyter nbextensions_configurator enable --user
+}
+
+
 usage (){
-  echo './notebook.sh {start|stop|restart|dump}'
+  echo './notebook.sh {start|stop|restart|install|dump}'
 }
 
 
@@ -71,6 +80,9 @@ case "$1" in
 	;;
     dump)
 	dump
+	;;
+    install)
+	install
 	;;
     *)
 	usage
