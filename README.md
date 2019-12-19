@@ -1,7 +1,7 @@
 ## Projet house-prices 
 
 
-# https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview
+https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview
 
 Avec 79 variables explicatives décrivant (presque) tous les aspects des logements résidentiels à Ames, dans l'Iowa,
 ce concours  met au défi de prévoir le prix de vente final de chaque logement.
@@ -27,6 +27,7 @@ Réseau de neurones avec Keras et recherche des hypers-paramétres optimaux.
 
 
 ### ------ Résultat Kaggle 0.1309 réseaux de neurones
+
 
 
 extra : tous les travaux dans le dossier House-Prices-version-NicolasA ont servit à la synthése, 
